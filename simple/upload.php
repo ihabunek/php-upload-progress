@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <pre>
 <?php
+
 $file = $_FILES['file'];
 
 if($file['error'] == UPLOAD_ERR_OK)

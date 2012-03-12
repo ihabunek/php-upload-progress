@@ -2,7 +2,7 @@
 
 session_start();
 
-$key = ini_get("session.upload_progress.prefix") . "jceprogress";
+$key = ini_get("session.upload_progress.prefix") . "myProgress";
 
 if (isset($_SESSION[$key])) 
 {
