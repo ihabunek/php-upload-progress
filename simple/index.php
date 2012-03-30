@@ -1,5 +1,6 @@
 <?php session_start(); ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Upload progress demo</title>
 	<link rel="stylesheet" href="../lib/bootstrap.css" />
@@ -16,7 +17,7 @@
 
 		<h1>Simple example</h1>
 		
-		<!-- Upload form -->
+		<h2>Upload form</h2>
 		<p>Choose a file for upload:</p>
 		<div class="well">
 			<form id="upload_form" action="upload.php" method="POST" enctype="multipart/form-data" target="result_frame">
@@ -26,9 +27,7 @@
 			</form>
 		</div>
 		
-		<h2>Progress</h2>
-		
-		<!-- Progress bar -->
+		<h2>Progress bar</h2>
 		<div id="progress" class="progress">
 			<div class="bar"></div>
 		</div>

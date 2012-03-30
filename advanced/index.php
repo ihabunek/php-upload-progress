@@ -1,5 +1,6 @@
 <?php session_start(); ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>PHP upload progress: Advanced example</title>
 	<link rel="stylesheet" href="../lib/bootstrap.css" />
@@ -49,8 +50,7 @@
 		<div id="status"></div>
 
 		<h2>Result</h2>
-		
-		<!-- The result from posting a file to upload.php is rendered in this iframe. -->
+		<p>The post result is redirected to this iframe:</p>
 		<iframe id="result_frame" name="result_frame" src="about:blank"></iframe>
 		
 		<p><a href="session.php" target="_blank">View session</a></p>
