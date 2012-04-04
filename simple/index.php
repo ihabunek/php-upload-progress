@@ -7,6 +7,7 @@
 	<style type="text/css">
 		h1, h2, h3 { margin-top: 20px; }
 		input[type="file"] { margin: 0 20px 0 0; }
+		#result_frame { width: 100%; height: 200px; }
 	</style>
 	<script type="text/javascript" src="../lib/jquery-1.7.1.js"></script>
 	<script type="text/javascript" src="../lib/bootstrap.js"></script>
@@ -18,12 +19,11 @@
 		
 		<h2>Upload form</h2>
 		<p>Choose a file for upload:</p>
-		<div class="well">
-			<form id="upload_form" action="upload.php" method="POST" enctype="multipart/form-data" target="result_frame">
-				<input type="hidden" name="<?php echo ini_get("session.upload_progress.name"); ?>" value="myProgress" />
-				<input type="file" name="file" id="file" /> 
-			</form>
-		</div>
+		
+		<form class="well" id="upload_form" action="upload.php" method="POST" enctype="multipart/form-data" target="result_frame">
+			<input type="hidden" name="<?php echo ini_get("session.upload_progress.name"); ?>" value="myProgress" />
+			<input type="file" name="file" id="file" /> 
+		</form>
 		
 		<button id="submit-button" class="btn btn-primary" onclick="upload()">Upload</button>
 		
