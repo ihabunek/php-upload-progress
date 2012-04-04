@@ -2,7 +2,7 @@
 
 session_start();
 
-$key = ini_get("session.upload_progress.prefix") . "fancyProgress";
+$key = ini_get("session.upload_progress.prefix") . "advancedProgress";
 
 if (isset($_SESSION[$key]))
 {

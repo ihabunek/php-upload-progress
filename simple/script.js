@@ -1,28 +1,28 @@
-$(document).ready(function() 
+/* Starts the file upload. */
+function upload()
 {
-	$('#upload_form').submit(function() 
-	{
-		// Clear the progress bar
-		$('#progress .bar').html('0%');
-		$('#progress .bar').width('0%');
+	// Clear the progress bar
+	$('#progress .bar').html('0%');
+	$('#progress .bar').width('0%');
 	
-		// Start polling for progress after delay
-		setTimeout("checkProgress()", 1500);
-	});
-});
+	// Submit the upload form
+	$('#upload_form').submit();
+	
+	// Start polling for progress after delay
+	setTimeout("checkProgress()", 1500);
+}
 
 function checkProgress() 
 {
 	$.get('progress.php', function(data) 
 	{
 		var percentage = data + '%';
-		console.log(percentage);
 		
 		// Update the progress bar
 		$('#progress .bar').html(percentage);
 		$('#progress .bar').width(percentage);
 		
-		// If not finished, query again in 1s
+		// If not finished, query again after a delay
 		if (data < 100) {
 			setTimeout("checkProgress()", 500);
 		}

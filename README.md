@@ -13,6 +13,6 @@ Releavant PHP docs:
 License and credits
 -------------------
 
-Copyright © 2011. by Ivan Habunek. Licenced under the MIT license.
+Copyright © 2012. by Ivan Habunek. Licenced under the MIT license.
 
 Uses [Twitter Bootstrap](http://twitter.github.com/bootstrap/) and [jQuery](http://jquery.com/).

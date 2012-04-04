@@ -14,7 +14,6 @@
 </head>
 <body>
 	<div class="container">
-
 		<h1>Simple example</h1>
 		
 		<h2>Upload form</h2>
@@ -23,9 +22,10 @@
 			<form id="upload_form" action="upload.php" method="POST" enctype="multipart/form-data" target="result_frame">
 				<input type="hidden" name="<?php echo ini_get("session.upload_progress.name"); ?>" value="myProgress" />
 				<input type="file" name="file" id="file" /> 
-				<input type="submit" class="btn btn-primary" />
 			</form>
 		</div>
+		
+		<button id="submit-button" class="btn btn-primary" onclick="upload()">Upload</button>
 		
 		<h2>Progress bar</h2>
 		<div id="progress" class="progress">
@@ -37,6 +37,7 @@
 		<iframe id="result_frame" name="result_frame" src="about:blank"></iframe>
 
 		<p><a href="session.php" target="_blank">View session</a></p>
+		<p><a href="../advanced/">Advanced example »</a></p>
 	</div>
 </body>
 </html>

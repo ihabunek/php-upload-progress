@@ -15,13 +15,6 @@
 	<div class="container">
 		<h1>Advanced example</h1>
 		
-		<p>Demonstrates:</p>
-		<ul>
-			<li>uploading multiple files</li>
-			<li>upload speed and estimated time to finish</li>
-			<li>cancelling an upload (still finishes the POST)</li>
-		</ul>	
-		
 		<h2>Upload form</h2>
 
 		<!-- Link to add a file input to the file-list. -->
@@ -29,7 +22,7 @@
 		
 		<form id="upload_form" action="upload.php" method="POST" enctype="multipart/form-data" target="result_frame">
 			
-			<input type="hidden" name="<?php echo ini_get("session.upload_progress.name"); ?>" value="fancyProgress" />
+			<input type="hidden" name="<?php echo ini_get("session.upload_progress.name"); ?>" value="advancedProgress" />
 			
 			<!-- A list of files for upload (added via javascript). -->
 			<div id="file-list" class="well"></div>
@@ -54,7 +47,7 @@
 		<iframe id="result_frame" name="result_frame" src="about:blank"></iframe>
 		
 		<p><a href="session.php" target="_blank">View session</a></p>
-
+		<p><a href="../simple/">Simple example »</a></p>
 	</div>
 </body>
 </html>
